@@ -16,6 +16,7 @@
     self = [super initWithBaseURL:url];
     if ( self ) {
         self.requestSerializer = [AFJSONRequestSerializer new];
+        [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"accept"];
     }
     return self;
 }
