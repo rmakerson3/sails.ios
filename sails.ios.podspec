@@ -31,6 +31,6 @@ s.public_header_files = 'Pod/Classes/**/*.h'
 # s.frameworks = 'SomeFramework', 'AnotherFramework'
 
 s.dependency 'SOCKit', '~> 1.1'
-s.dependency 'AFNetworking', '~> 2.2.1'
+s.dependency 'AFNetworking', '~> 2.5.3'
 s.dependency 'socket.IO', '~> 0.5.2'
 end
