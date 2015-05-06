@@ -28,9 +28,9 @@
     id JSON = [super responseObjectForResponse:response data:data error:error];
     
     if ( JSON ) {
-        if ( [JSON isKindOfClass:[NSArray class]] ) {
+        if ( [JSON isKindOfClass:[NSDictionary class]] && [[JSON objectForKey:@"data"] isKindOfClass:[NSArray class]] ) {
             NSMutableArray *models = [[NSMutableArray alloc] init];
-            for ( id object in JSON ) {
+            for ( id object in JSON[@"data"] ) {
                 id model = [self modelForDictionary:object];
                 [models addObject:model];
             }
