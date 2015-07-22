@@ -32,5 +32,5 @@ s.public_header_files = 'Pod/Classes/**/*.h'
 
 s.dependency 'SOCKit', '~> 1.1'
 s.dependency 'AFNetworking', '~> 2.5.3'
-s.dependency 'socket.IO', :git => 'https://github.com/rmakerson3/socket.IO-objc.git'
+s.dependency 'socket.IO', '~> 0.5.2'
 end
